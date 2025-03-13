@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <!-- Nav Bar -->
+  <nv>
+    <ul>
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="project.html">Project</a>
+      </li>
+      <li>
+        <a href="about.html">About</a>
+      </li>
+    </ul>
+  </nv>
+
+  <main>
+
+    <!-- Title -->
+
+      <h1>Our Project</h1>
+
+      <main>
+
+        <!-- Information -->
+        <h3>What It Is</h3>
+        <p>Our solution to improve the TTC for those individuals who are less inclined to take the Toronto Transit Commission is to create an AI security system across all stations and vehicles on the TTC. The system will be built into already existing security cameras on the TTC and is programmed to detect any signs of danger based on danger levels assigned to it, which include the safe, caution, and danger levels. <p/>
+
+          <p>Danger-level signs include the appearance of weapons fighting, and the appearance of large amounts of blood. Caution-level signs would include less definitive things like, rapid movements. The safe level is when these signs are not visible to the system. The AI security system will operate by watching for these signs through the security camera lens. If there is a detection of one or more of these dangerous level signs, the system will directly alert nearby TTC personnel through an SMS messaging system to assess the situation, making responding to emergencies on the TTC much quicker and thus creating a much safer environment for all. 
+</p>
+
+        <h3>Impacts</h3>
+        <p>Safety and security are one of our main focuses for this project as it is our main priority in improving the TTC, particularly how quickly and accurately emergencies are responded to. Safety and security is one of our main focuses for this project as we believe improving security will make commuters, especially from disadvantaged groups, more comfortable, and therefore more inclined to take the TTC. This will be achieved by how quickly and accurately emergencies are responded to using this security system. Our AI security system idea can result in incidents being resolved faster which can reduce delay times and increase efficiency. Not only will this system improve how quickly these incidents are addressed, but will result in fewer incidents on the TTC, creating better representation for the Toronto Transit Commission. <p/> 
+
+          <p>Sustainability and inclusiveness are also addressed in this solution. In the future, this AI system can be improved to detect when physically disabled people need assistance, for example, if someone falls off their wheelchair the AI system can alert on site personnel and assist the person. The AI system can also detect the possibility of other related incidents. In the future, this system could also detect facial expressions to detect dangerous incidents or when someone is possibly confused and needs assistance. The latter example could help those with mental disabilities, for example those with dementia.  Implementing AI, has no negative impacts on the environment and doesn’t require years of construction, which also makes it cheaper. <p/>
+
+          <p>However, there are limitations to this system as AI can result in false detection or bias in design, which is when the AI assumes people are dangerous based on their appearance. Some future enhancements that could be implemented or programmed into the system are adding facial detection to detect anger or frustration, detecting falls or injuries, and involving inclusiveness in the security system. The system can also falsely detect danger, the hope is that since AI is an emerging technology that is rapidly improving, the chances of this system failing will be minimized. 
+</p>
+
+        <h3>Prototype</h3>
+
+        <p>In order to demonstrate our proposed idea, we created a “prototype” model of a sample of how the AI security system could look using computer vision. This “prototype” is trained to detect only dangerous weapons, facial detection and other behaviour detection would be implemented for future work (no caution-level detection). A banana was used as a placeholder for a weapon/dangerous object as it is a simple object in appearance to train an AI model on. The very simple detection model was made using the Python Opencv library, the figure below is what the code looks like. The extensible Markup Language (XML) data, defines the data of what a banana looks like.
+</p>
+  <p>
+    The code implements machine learning with the built in opencv cascade classifier for detection, which is usually used for facial detection, but has been used to detect a banana. The cascade classifier utilizes Haar cascade object detection, which is a method proposed by Paul Viola and Michael Jones in their paper, "Rapid Object Detection using a Boosted Cascade of Simple Features" in 2001. You can learn more about how the AI model works in this paper. However a simple explanation of how the Haar cascade object detection works is by training the AI model off of images (in this case, images of bananas), by applying kernels to the images, as shown in the figure below. The model then creates a threshold of positive and negative faces to classify the object which can be used for object detection purposes like this (Doxygen 2024). 
+  </p>
+        <img src="prototype.png" width=700 height=400 alt = "Holding a banaa to the screen in which the monitor shows is dangerous.">
+        
+  <p> The figure above is a screenshot of the model in action. As shown, it’s able to successfully detect the banana as dangerous, and has successfully done so in many other tests. However, the model isn’t 100% accurate, as shown in the same figure, the AI model also detected the balloon above as dangerous, which is false for this project because it’s not a banana. This issue should be taken into account when making a more accurate model. This model works well in a mostly blank environment, but should still be accurate in a crowded space full of many things in the TTC. The model is prone to a few minor mistakes, but overall works well.
+</p>      
+        
+
+        <!-- Other Title -->
+
+        <h1>More Information</h1>
+
+        <!-- Information to addition resources -->
+      
+        
+        <p>
+          You can learn more about our project on  <a href="https://docs.google.com/document/d/159fqrZMKkblfEhUUuznRUxyzdy68Qef2g3B0joCZbOo/edit?usp=sharing"</a>research documunt. 
+        </p>
+
+        
+      </main>  
+
+      </body>
+    </html>
+  </main>
+  
+</body>
+
+</html>

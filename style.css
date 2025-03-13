@@ -1,0 +1,68 @@
+/* STYLE SECTIONING TAGS */
+* { /* Reset the space of the webpage */
+   margin: 0px;
+   padding: 0px;
+}
+
+body {
+ background-color: #9acb9d; 
+ text-align: center;
+}
+
+/* STYLE TEXT */
+
+h1 {
+  color:#540D6E;
+  font-family: "Monaco", monospace;
+   margin-top:1em;
+}
+
+h2 {
+  color:#ffffff;
+  font-family: "Monaco", monospace;
+  font-size:20px;
+}
+
+h3 {
+  color:#6d5077;
+  font-family: "Monaco", monospace;
+   margin-top:1em;
+}
+
+p {
+     color:#38004d;
+     font-family: "Monaco", monospace;
+     margin-top:1em;
+}
+
+/* STYLE IMAGES */
+
+img {
+  border-radius: 10%;
+  border: 3px solid #ffffff;
+  margin-bottom: 2em;
+  margin-top: 0.5em;
+}
+/* STYLE NAV BAR */
+
+ul {
+  list-style-type:None;
+  background-color: #540D6E;
+  overflow: hidden;
+  padding:1em;
+}
+
+li {
+  display: inline
+}
+
+li a {
+  text-decoration: none; 
+  color: #9acb9d;
+  font-dash: 1.3em;
+  padding: 1em;
+}
+
+li a:hover {
+  background-color: #5d396a;
+} 
